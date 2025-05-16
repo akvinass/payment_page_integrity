@@ -1,3 +1,10 @@
+'''on the high level this script will  collect the current contents of relevant fields from your page html code
+(provided in the variables "scripts" and "forms"), create a hash out of them and then compare it with the one
+in the "baseline_hash" file. If any changes detected it will send an alert to a specified email and export the
+changed fields into the "page_diff.txt" file for analysis.
+Using this script through crontab or any other task scheduler will provide for a certain level of automation
+suitable for you'''
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup

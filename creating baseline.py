@@ -1,3 +1,6 @@
+'''this part is used for creating a baseline hash of the html contents of your payment page.
+"payment_page_analyzer" will then check the current contents against it'''
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup

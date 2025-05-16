@@ -1,3 +1,5 @@
+'''function below is an example of configuring email alerts'''
+
 import smtplib
 from email.mime.text import MIMEText
 
