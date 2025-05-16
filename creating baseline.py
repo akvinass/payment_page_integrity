@@ -7,7 +7,7 @@ options = Options()
 options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
-url = "https://secure.platononline.com/payment/purchase?token=0f8d99e856a62c034af3e9c5841b71441"
+url = "https://yourpaymentpage.com"
 
 driver.get(url)
 html = driver.page_source
