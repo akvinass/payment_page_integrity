@@ -6,12 +6,15 @@ from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import hashlib
 
+#setting headless browser
 options = Options()
 options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
+#page URL
 url = "https://yourpaymentpage.com"
 
+#loading the page
 driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html, 'html.parser')
