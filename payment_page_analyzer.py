@@ -10,7 +10,7 @@ options.add_argument("--headless")
 driver = webdriver.Chrome(options=options)
 
 #page URL
-url = "https://secure.platononline.com/payment/purchase?token=0f8d99e856a62c034af3e9c5841b71441"
+url = "https://yourpaymentpage.com"
 
 #loading the page
 driver.get(url)
